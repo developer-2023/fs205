@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object returned from function - exercise</title>
+</head>
+<body>
+    
+    <script>
+        function createPhone(brand, name, system, color) {
+            if (system != "Android" && system != "iOS") return null;
+        
+            let obj = {
+                brand: brand,
+                name: name,
+                system: system,
+                color: color
+            }
+
+            return obj;
+        }
+
+        let phone1 = createPhone("Sony", "Xperia", "Android", "black");
+        console.log(phone1);
+
+        let phone2 = createPhone("Iphone", "Max", "iOS", "black");
+        console.log(phone2);
+
+        let phone3  = createPhone("Nokia", "Ngage", "Symbian", "silver");
+        console.log(phone3);
+</script>
+</body>
+</html>
